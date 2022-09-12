@@ -26,8 +26,16 @@ int main(void)
 		}
 		else
 		{
-			i++;
-			j = 1 + i;
-		}
+			putchar(44);
+			putchar(32);
+			if (j < 57)
+			{
+				j++;
+			}
+			else
+			{
+				i++;
+				j = 1 + i;
+			}
 	}
 }
