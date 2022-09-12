@@ -37,6 +37,8 @@ int main(void)
 				i++;
 				j = 1 + i;
 			}
+		}
 	}
+
 	return (0);	
 }
