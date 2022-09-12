@@ -38,8 +38,6 @@ int main(void)
 				j = 1 + i;
 			}
 		}
-
 	}
- 
-	return (0);	
+ 	return (0);
 }
