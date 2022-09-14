@@ -1,23 +1,25 @@
-#include "main.h"
+int _putchar(char c);
 
+void print_alphabet(void);
 
+void print_alphabet_x10(void);
 
-/**
- *
- *  * main - check the code.
- *
- *   *
- *
- *    * Return: Always 0.
- *
- *     */
+int _islower(int c);
 
-int main(void)
+int _isalpha(int c);
 
-{
+int print_sign(int n);
 
-	    print_alphabet_x10();
+int _abs(int);
 
-	        return (0);
+int print_last_digit(int);
 
-}
+void jack_bauer(void);
+
+void times_table(void);
+
+int add(int, int);
+
+void print_to_98(int n);
+
+void print_times_table(int n);
