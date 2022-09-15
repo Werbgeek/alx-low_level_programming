@@ -6,9 +6,7 @@
  * Return: Always 0.
  */
 int main(void)
-{
-	char c;
-
-	print__putchar(c);
+}
+	print("_putchar\n");
 	return (0);
 }
