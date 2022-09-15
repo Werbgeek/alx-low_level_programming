@@ -2,17 +2,15 @@
 
 /**
  * _isalpha - checks for alphabetic 
+ * @c: character to check
  *
  * return : 0 or 1
  */
 
 int _isalpha(int c)
 {
-	char c;
-
-	if (c >= _isalpha)
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
-		c = "h"
 		return (1);
 	}
 	else
