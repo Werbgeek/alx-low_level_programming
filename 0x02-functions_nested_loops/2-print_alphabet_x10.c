@@ -6,6 +6,7 @@
  * Return: void
  */
 
+
 void print_alphabet_x10(void)
 {
 	char c;
@@ -13,7 +14,10 @@ void print_alphabet_x10(void)
 	
 	for (i = 0; i < 10; i++)
 	{
-		_putchar(c);
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			_putchar(c);
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
-}
+}	
