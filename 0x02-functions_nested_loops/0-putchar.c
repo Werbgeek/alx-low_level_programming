@@ -7,6 +7,8 @@
  */
 int main(void)
 {
-	print__putchar();
+	char c;
+
+	print__putchar(c);
 	return (0);
 }
