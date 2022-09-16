@@ -2,21 +2,19 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @n
+ * @i: input number as an integer.
  *
  * return: 0 or 1
  */
 
 int _abs(int c)
 {
-	if (c < 1)
+	if (i >= 0)
 	{
-		c = -1;
-		return (c*-1);
+		return (i);
 	}
 	else
 	{
-		return (0);
+		return (i * -1);
 	}
 }
-
