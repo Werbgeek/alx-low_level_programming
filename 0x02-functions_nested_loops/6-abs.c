@@ -19,9 +19,5 @@ int _abs(int c)
 		c = 0;
 		return (0);
 	}
-	else if (c > -4)
-	{
-		return (2);
-	}
 }
 
