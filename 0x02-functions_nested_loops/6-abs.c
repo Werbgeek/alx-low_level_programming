@@ -7,7 +7,7 @@
  * return: 0 or 1
  */
 
-int _abs(int c)
+int _abs(int)
 {
 	int c;
 
@@ -21,10 +21,9 @@ int _abs(int c)
 		c = 0;
 		return (0);
 	}
-	else (c > -4)
+	else if (c > -4)
 	{
-		c = -2;
-		return (c*-1);
+		return (2);
 	}
 }
 
