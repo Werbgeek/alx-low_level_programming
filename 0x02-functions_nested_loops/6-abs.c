@@ -7,7 +7,7 @@
  * return: 0 or 1
  */
 
-int _abs(int c)
+int _abs(int i)
 {
 	if (i >= 0)
 	{
