@@ -2,44 +2,51 @@
 
 /**
  * print_times_table - Prints the n times table
- * @n: number times table (0 < n <= 15)
+ * @n: integer input
  *
- * Return: no return
+ * Return: void
  */
 
 void print_times_table(int n)
 {
-	int a, b, op;
+	int a, b, c, d, e, f;
 	if (n >= 0 && n <= 15)
 	{
 		for (a = 0; a <= n; a++)
 		{
-			_putchar(48);
-			for (b = 1; b <= n; b++)
+			for (b = 0; b <= n; b++)
 			{
-				op = a * b;
-				_putchar(44);
-				_putchar(32);
-				if (op <= 9)
+				c = a * b; d = c / 100; e = (c /  10) % 10;
+				f = (c % 100) % 10;
+				if (b == 0)
 				{
-					_putchar(32);
-					_putchar(32);
-					_putchar(op + 48);
+					_putchar('0');
 				}
-				else if (op <= 99)
+				else if (c < 10)
 				{
-					_putchar(32);
-					_putchar((op / 10) + 48);
-					_putchar((op % 10) + 48);
+					_putchar(' '); _putchar(' ');
+					_putchar('0' + f);
 				}
-				else
+				else if (c < 100)
 				{
-					_putchar(((op / 100) % 10) + 48);
-					_putchar(((op / 100) % 10) + 48);
-					_putchar((op % 10) + 48);
+					_putchar(' ');
+					_putchar('0' + e); _putchar('0' + f);
+				}
+				else 
+				{
+					_putchar('0' + d);
+					_putchar('0' + e);
+					_putchar('0' + f);
+				}
+				if (b < n)
+				{
+					_putchar(','); _putchar(' ');
+				}
+				else 
+				{
+					_putchar('\n')
 				}
 			}
-			_putchar('\n');
 		}
 	}
 }
