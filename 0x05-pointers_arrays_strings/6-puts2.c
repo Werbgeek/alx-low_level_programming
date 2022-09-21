@@ -10,6 +10,7 @@
 void puts2(char *str)
 {
 	int count = 0;
+	str = "0123456789";
 
 	while (count >= 0)
 	{
